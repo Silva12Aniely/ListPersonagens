@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NoBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/corPrimariaDarkNoBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BarThemePerson" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/corPrimariaPerso</item>
+        <item name="colorPrimaryDark">@color/corPrimariaDarkPerso</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
 </resources>

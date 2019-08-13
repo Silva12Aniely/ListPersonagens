@@ -23,6 +23,7 @@ public class DadosPersonagem extends AppCompatActivity {
 
         Intent intent = getIntent();
         String nomef = intent.getStringExtra("name");
+        String subf = intent.getStringExtra("sub_titulo");
         int imgf = intent.getIntExtra("image", 0);
 
         personagem.setText(nomef);

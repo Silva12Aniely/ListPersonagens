@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_person">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/lstPersonagens"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
+        android:background="@drawable/background_lstperson"
         android:padding="10dp">
 
         <ImageView
@@ -15,11 +16,12 @@
             android:layout_width="150dp"
             android:layout_height="120dp"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="27dp"
-            android:src="@drawable/ic_nero"/>
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_border"
+            android:src="@drawable/ic_nero" />
 
         <TextView
             android:id="@+id/nomePersonagens"
@@ -29,11 +31,10 @@
             android:layout_marginEnd="44dp"
             android:layout_marginRight="44dp"
             android:layout_toStartOf="@id/imgPersonagens"
+            android:layout_toLeftOf="@id/imgPersonagens"
             android:text="NERO"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="30sp"
-            android:layout_toLeftOf="@id/imgPersonagens"/>
-
+            android:textSize="30sp" />
     </RelativeLayout>
 </RelativeLayout>

@@ -11,8 +11,8 @@
         android:id="@+id/personagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="10dp"
         android:text="NERO"
         android:layout_below="@id/imgPersonagem"
         android:textColor="#fff"
@@ -23,8 +23,17 @@
         android:layout_width="250dp"
         android:layout_height="220dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/ic_nero"/>
 
-
+    <TextView
+        android:id="@+id/DescPersonagem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="The Young Devil Hunter"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@drawable/title_underbar_black"
+        android:layout_below="@id/personagem"
+        android:gravity="center_horizontal"/>
 </RelativeLayout>
