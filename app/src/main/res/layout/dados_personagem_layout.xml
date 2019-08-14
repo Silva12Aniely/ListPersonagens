@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DadosPersonagem"
-    android:background="@drawable/background_person">
+    android:background="@drawable/background_person"
+    tools:context=".DadosPersonagem">
 
     <TextView
         android:id="@+id/personagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imgPersonagem"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="10dp"
         android:text="NERO"
-        android:layout_below="@id/imgPersonagem"
         android:textColor="#fff"
-        android:textSize="40sp"/>
+        android:textSize="40sp" />
 
     <ImageView
         android:id="@+id/imgPersonagem"
@@ -24,16 +24,38 @@
         android:layout_height="220dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:src="@drawable/ic_nero"/>
+        android:src="@drawable/ic_nero" />
 
     <TextView
         android:id="@+id/DescPersonagem"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="The Young Devil Hunter"
-        android:textSize="25sp"
-        android:textColor="#fff"
-        android:background="@drawable/title_underbar_black"
         android:layout_below="@id/personagem"
-        android:gravity="center_horizontal"/>
+        android:background="@drawable/title_underbar_black"
+        android:gravity="center_horizontal"
+        android:text="The Young Devil Hunter"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <RatingBar
+        android:id="@+id/RatingPerso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DescPersonagem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:numStars="5"
+        android:background="@drawable/background_rating"
+        android:saveEnabled="true" />
+
+    <Button
+        android:id="@+id/btnRating"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/RatingPerso"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_login"
+        android:text="Rating"
+        android:textColor="#fff" />
 </RelativeLayout>

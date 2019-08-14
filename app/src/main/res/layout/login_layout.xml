@@ -26,6 +26,7 @@
             android:layout_height="39dp"
             android:background="@drawable/title_underbar_black"
             android:text="Login:"
+            android:inputType="textPersonName"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textSize="25sp" />
