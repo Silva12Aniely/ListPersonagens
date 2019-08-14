@@ -27,7 +27,7 @@
         android:src="@drawable/ic_nero" />
 
     <TextView
-        android:id="@+id/DescPersonagem"
+        android:id="@+id/descPersonagem"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@id/personagem"
@@ -41,12 +41,12 @@
         android:id="@+id/RatingPerso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/DescPersonagem"
+        android:layout_below="@id/descPersonagem"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:numStars="5"
-        android:background="@drawable/background_rating"
+        android:progressBackgroundTint="#37FFFFFF"
         android:saveEnabled="true" />
 
     <Button

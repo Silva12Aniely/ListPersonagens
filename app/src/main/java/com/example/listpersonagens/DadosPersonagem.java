@@ -25,7 +25,7 @@ public class DadosPersonagem extends AppCompatActivity {
 
         personagem = (TextView) findViewById(R.id.personagem);
         imgPersonagem = (ImageView) findViewById(R.id.imgPersonagem);
-        descPersonagem = (TextView) findViewById(R.id.DescPersonagem);
+        descPersonagem = (TextView) findViewById(R.id.descPersonagem);
 
         Intent intent = getIntent();
         String nomef = intent.getStringExtra("name");
@@ -38,7 +38,7 @@ public class DadosPersonagem extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        RatingBar
+        /* RatingBar */
         final RatingBar ratingBar = (RatingBar) findViewById(R.id.RatingPerso);
 
         btnRating = (Button) findViewById(R.id.btnRating);

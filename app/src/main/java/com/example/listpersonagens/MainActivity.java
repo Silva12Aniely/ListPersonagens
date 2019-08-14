@@ -17,13 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
     String[] nomePersonagens = {"NERO", "DANTE", "V", "NICO", "TRISH", "LADY", "VERGIL", "SPARDA"};
 
+    String[] two_ttle = {"The Young Devil Hunter", "The Strongest Demon Slayer",
+            "V The Mysterious One", "Artisan of Arms", "Fiendish Femme Fatale", "Armed Hunter for Hire",
+            "Son of Sparda", "Legendary Dark Knight"};
+
     int[] imgPersonagens = {R.drawable.ic_nero, R.drawable.ic_dante,
             R.drawable.ic_v, R.drawable.ic_nico, R.drawable.ic_trish,
             R.drawable.ic_lady, R.drawable.ic_vergil, R.drawable.ic_sparda};
 
-    String[] sub = {"The Young Devil Hunter", "The Strongest Demon Slayer",
-            "V The Mysterious One", "Artisan of Arms", "Fiendish Femme Fatale", "Armed Hunter for Hire",
-            "Son of Sparda", "Legendary Dark Knight"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(getApplicationContext(), DadosPersonagem.class);
                 intent.putExtra("name", nomePersonagens[position]);
                 intent.putExtra("image", imgPersonagens[position]);
-                intent.putExtra("sub_titulo", sub[position]);
+                intent.putExtra("sub_titulo", two_ttle[position]);
                 startActivity(intent);
             }
         });
@@ -72,11 +74,11 @@ public class MainActivity extends AppCompatActivity {
 
             TextView name = (TextView) view1.findViewById(R.id.nomePersonagens);
             ImageView image = (ImageView) view1.findViewById(R.id.imgPersonagens);
-            TextView sub_titulo = (TextView) view1.findViewById(R.id.DescPersonagem);
+            TextView sub_ttulo = (TextView) view1.findViewById(R.id.descPersonagem);
 
             name.setText(nomePersonagens[position]);
             image.setImageResource(imgPersonagens[position]);
-            sub_titulo.setText(sub[position]);
+//           sub_ttulo.setText(two_ttle[position]);
             return view1;
         }
     }
