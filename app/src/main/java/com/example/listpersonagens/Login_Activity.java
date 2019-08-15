@@ -65,9 +65,9 @@ public class Login_Activity extends AppCompatActivity {
         });
 
 //        toobar
-        toolbar = (Toolbar) findViewById(R.id.idLogin);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar = (Toolbar) findViewById(R.id.idLogin);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

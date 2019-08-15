@@ -4,18 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cadastro_Activity"
-    android:orientation="vertical">
+    android:background="@drawable/background_person"
+    android:orientation="vertical"
+    tools:context=".Cadastro_Activity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/idCadastro"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/corPrimariaDarkNoBar"
-        android:elevation="4dp"
-        app:title="Cadastro"
-        app:titleTextColor="#fff">
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
 
-    </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textColor="#fff"
+            android:textSize="25sp" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Senha:"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:inputType="textPassword"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="E-mail:"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#fff"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/border_login"
+                android:text="Cadastrar"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnSair"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/border_login"
+                android:text="Sair"
+                android:layout_marginLeft="12dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
