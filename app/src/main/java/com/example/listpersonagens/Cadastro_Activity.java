@@ -21,7 +21,7 @@ public class Cadastro_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cadastro_layout);
 
-        toolbar = (Toolbar) findViewById(R.id.idCadastro);
+//        toolbar = (Toolbar) findViewById(R.id.idCadastro); idCadastro = id+daToolbar
 
         /*carrega a toolbar*/
         setSupportActionBar(toolbar);
